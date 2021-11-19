@@ -3,6 +3,10 @@ body::before {
     content: '';
     height: 60px;
   }
+  body {
+    position: relative;
+    background: hsl(0, 0, 94%);
+  }
   
   #map {
     width: 100%;
@@ -25,3 +29,17 @@ body::before {
         background: white;
         color: black;
   }
+  .img-logo{
+    animation: float 6s linear infinite;
+  }
+  @keyframes float{
+    0%, 100%{
+        transform: translateY(1.5rem);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+}
+.card-img-top {
+    height: 280px;
+}
